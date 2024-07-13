@@ -16,7 +16,7 @@ class _MyContactsState extends State<MyContacts> with TickerProviderStateMixin {
     'facebook.icon.jpg': 'https://www.facebook.com/mero32.r',
     'instagram.jpg': 'https://www.instagram.com/m.j.o21?igsh=MW1vYzQ1Ym5zbHN3cA==',
     'whatsapp.jpg': 'https://wa.me/+201096640473',
-    'github.png': 'https://github.com/AmmarYasser10',
+    'github.png': 'https://github.com/AMMAR-YASSER-1',
     'telegram.png': 'https://t.me/Amar9541',
     'twitter.jpg': 'https://x.com/AmarYas00091698?t=GxnBJtquFDZ0ImkQ_pW0ig&s=09',
   };
