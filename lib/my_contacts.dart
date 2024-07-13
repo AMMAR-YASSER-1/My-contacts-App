@@ -1,8 +1,10 @@
-import 'package:app_2/social_media_icon.dart';
+
+import 'package:app_2/widgets/Contacts-Grid.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:animated_background/animated_background.dart';
+
 
 class MyContacts extends StatefulWidget {
   MyContacts({super.key});
@@ -88,21 +90,7 @@ class _MyContactsState extends State<MyContacts> with TickerProviderStateMixin {
                       ),
                     ],
                   ),
-                  GridView.builder(
-                    itemCount: socialMedia.length,
-                    gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                      crossAxisCount: 3,
-                    ),
-                    itemBuilder: (context, index) {
-                      return SocialMediaIcon(
-                        SocialMedia: socialMedia.keys.toList()[index],
-                        socialMediaLinks: socialMedia.values.toList()[index],
-                      );
-                    },
-                    shrinkWrap: true,
-                    physics: NeverScrollableScrollPhysics(),
-                    padding: EdgeInsets.all(25),
-                  ),
+                  ContactsGrid(socialMedia: socialMedia),
                   SizedBox(height: 150),
                   Row(
                     mainAxisSize: MainAxisSize.min,
@@ -139,3 +127,4 @@ class _MyContactsState extends State<MyContacts> with TickerProviderStateMixin {
     );
   }
 }
+
