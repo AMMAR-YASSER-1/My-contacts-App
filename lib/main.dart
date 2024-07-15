@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false, // إزالة كلمة "debug"
+      debugShowMaterialGrid: false,
       home: SplashScreen(), 
       routes: {
         '/home': (context) => MyContacts(), 
